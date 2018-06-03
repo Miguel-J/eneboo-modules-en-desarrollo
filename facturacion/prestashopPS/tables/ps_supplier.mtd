@@ -1,0 +1,49 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>ps_supplier</name>
+		<!-- Listado de fabricantes de artículos -->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Fabricantes")</alias>
+
+	<field>
+		<name>id_supplier</name>
+		<!-- Código del fabricante -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","id_supplier")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>INT</type>
+		<length>10</length>
+	</field>
+	<field>
+		<name>name</name>
+		<!-- Nombre del fabricante -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","name")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>64</length>
+	</field>
+	<field>
+		<name>date_add</name>
+		<!-- Fecha de añadido del fabricante -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","date_add")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>timestamp</type>
+	</field>
+	<field>
+		<name>date_upd</name>
+		<!-- Fecha de modificacion del fabricante -->		
+		<alias>QT_TRANSLATE_NOOP("MetaData","date_upd")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>timestamp</type>
+	</field>
+	<field>
+		<name>active</name>
+		<!-- Estado activo o no del fabricante -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","active")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>bool</type>
+		<default>true</default>
+	</field></TMD>

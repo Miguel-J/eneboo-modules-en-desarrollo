@@ -1,0 +1,30 @@
+<ACTIONS>
+    <action>
+		<name>factpresta_general</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Datos Generales")</alias>
+		<description>QT_TRANSLATE_NOOP("MetaData","Los datos generales son una serie de valores que se usan para personalizar el funcionamiento del módulo de almacén")</description>
+		<scriptform>factpresta_general</scriptform>
+		<scriptformrecord>factpresta_general</scriptformrecord>
+		<table>factpresta_general</table>
+		<form>factpresta_general</form>
+		<formrecord>factpresta_general</formrecord>
+	</action>
+	<action>
+		<name>categoriasPS</name>
+		<description>QT_TRANSLATE_NOOP("MetaData","Las categorias de artículos permiten agrupar artículos por determinados criterios comunes")</description>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Categorias de artículos")</alias>
+		<table>ps_category</table>
+		<form>master_copy</form>
+		<formrecord>ps_category</formrecord>
+		<scriptformrecord>ps_category</scriptformrecord>
+	</action>
+	
+	<action>
+		<name>fabricantesPS</name>
+		<description>QT_TRANSLATE_NOOP("MetaData","Los fabricantes de artículos permiten agrupar artículos por determinados criterios comunes")</description>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Fabricantes de artículos")</alias>
+		<table>ps_supplier</table>
+		<form>master_copy</form>
+		<formrecord>ps_supplier</formrecord>
+	</action>
+</ACTIONS>

@@ -1,0 +1,81 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>factpresta_general</name>
+	<!--Datos generales de almacén-->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Datos Generales")</alias>
+	<field>
+		<name>id</name>
+		<!-- Identificador  -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>serial</type>
+		<visible>true</visible>
+	</field>
+	<field>
+		<name>codimpuesto</name>
+		<!-- I.V.A. por defecto-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","I.V.A. por defecto")</alias>
+		<pk>false</pk>
+		<type>string</type>
+		<length>10</length>
+
+		<relation>
+			<table>impuestos</table>
+			<field>codimpuesto</field>
+			<card>M1</card>
+		</relation>
+	</field>
+	<field>
+		<name>basedatos</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Base de datos")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>50</length>
+	</field>
+	<field>
+		<name>driver</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Driver")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>50</length>
+		<optionslist>PostgreSQL,MySQL</optionslist>
+		<default>PostgreSQL</default>
+	</field>
+	<field>
+		<name>puerto</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Puerto")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>4</length>
+	</field>
+	<field>
+		<name>servidor</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Servidor")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>50</length>
+	</field>
+	<field>
+		<name>contrasena</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Contraseña")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>50</length>
+	</field>
+	<field>
+		<name>usuario</name>
+		<!--usuario central-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Usuario")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>20</length>
+	</field>
+</TMD>
+

@@ -1,0 +1,112 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>ps_category</name>
+		<!-- Listado de categorias de artículos -->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Categorias")</alias>
+
+	<field>
+		<name>id_category</name>
+		<!-- Código de la categoria -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código Categoría")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>int</type>
+		<length>10</length>
+
+		<relation>
+			<table>ps_articuloscategoria</table>
+			<field>idcat</field>
+			<card>1M</card>
+		</relation>
+	</field>
+	<field>
+		<name>id_parent</name>
+		<!-- Código de la categoria superior -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código categoria superior")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>int</type>
+		<length>10</length>
+	</field>
+	<field>
+		<name>id_shop_default</name>
+		<!-- Código de la categoria superior -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","shop default")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>int</type>
+		<length>10</length>
+	</field>
+	<field>
+		<name>level_depth</name>
+		<!-- Código de la categoria superior -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","level_depth")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>tinyint</type>
+		<length>3</length>
+	</field>
+	<field>
+		<name>nleft</name>
+		<!-- Código de la categoria superior -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","nleft")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>uint</type>
+		<length>10</length>
+	</field>
+	<field>
+		<name>nright</name>
+		<!-- Código de la familia -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","nright")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>10</length>
+	</field>
+	<field>
+		<name>active</name>
+		<!-- Código de la familia -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Activa")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>bool</type>
+		<default>true</default>
+	</field>
+	<field>
+		<name>date_add</name>
+		<!-- Código de la categoria superior -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","date_add")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>timestamp</type>
+	</field>
+	<field>
+		<name>date_upd</name>
+		<!-- Código de la categoria superior -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","date_upd")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>timestamp</type>
+	</field>
+	<field>
+		<name>position</name>
+		<!-- Código de la categoria superior -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","position")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>uint</type>
+		<length>10</length>
+	</field>	
+	<field>
+		<name>is_root_category</name>
+		<!-- Código de la categoria superior -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","is_root_category")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<type>tinyint</type>
+		<length>1</length>
+	</field>
+
+
+</TMD>
