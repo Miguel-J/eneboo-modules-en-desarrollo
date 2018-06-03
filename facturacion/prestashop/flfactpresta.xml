@@ -1,0 +1,21 @@
+<ACTIONS>
+	<action>
+		<name>categorias</name>
+		<description>QT_TRANSLATE_NOOP("MetaData","Las categorías de artículos permiten agrupar artículos por determinados criterios comunes")</description>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Categorías de artículos")</alias>
+		<scriptform>mastercategorias</scriptform>
+		<scriptformrecord>categorias</scriptformrecord>
+		<table>ps_categorias</table>
+		<form>mastercategorias</form>
+		<formrecord>categorias</formrecord>
+	</action>
+	
+	<action>
+		<name>fabricantes</name>
+		<description>QT_TRANSLATE_NOOP("MetaData","Los fabricantes de artículos permiten agrupar artículos por determinados criterios comunes")</description>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Fabricantes de artículos")</alias>
+		<table>fabricantes</table>
+		<form>master_copy</form>
+		<formrecord>fabricantes</formrecord>
+	</action>
+</ACTIONS>

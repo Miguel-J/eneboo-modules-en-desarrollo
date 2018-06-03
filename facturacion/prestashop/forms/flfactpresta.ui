@@ -1,0 +1,192 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>FLWidgetApplication</class>
+<comment>Ventana principal MDI de la aplicacion</comment>
+<widget class="QMainWindow">
+    <property name="name">
+        <cstring>FLWidgetApplication</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>536</width>
+            <height>469</height>
+        </rect>
+    </property>
+    <property name="font">
+        <font>
+            <family>Helvetica [Urw]</family>
+        </font>
+    </property>
+    <property name="caption">
+        <string>Categoria y Fabricante</string>
+    </property>
+    <property name="icon">
+        <pixmap>image9231</pixmap>
+    </property>
+    <property name="toolTip" stdset="0">
+        <string></string>
+    </property>
+    <property name="whatsThis" stdset="0">
+        <string>Eneboo software ERP</string>
+    </property>
+</widget>
+<menubar>
+    <property name="name">
+        <cstring>menubar</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>536</width>
+            <height>23</height>
+        </rect>
+    </property>
+    <property name="acceptDrops">
+        <bool>false</bool>
+    </property>
+    <property name="frameShape">
+        <enum>MenuBarPanel</enum>
+    </property>
+    <property name="defaultUp">
+        <bool>false</bool>
+    </property>
+    <item text="Prestashop" name="Prestashop">
+        <action name="wg_widget"/>
+        <action name="categorias"/>
+        <action name="fabricantes"/>
+    </item>
+</menubar>
+<toolbars>
+    <toolbar dock="2">
+        <property name="name">
+            <cstring>toolBar</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>223</width>
+                <height>29</height>
+            </rect>
+        </property>
+        <property name="acceptDrops">
+            <bool>true</bool>
+        </property>
+        <property name="frameShape">
+            <enum>ToolBarPanel</enum>
+        </property>
+        <property name="label">
+            <string>Herramientas</string>
+        </property>
+        <separator/>
+        <action name="categorias"/>
+        <action name="fabricantes"/>
+    </toolbar>
+</toolbars>
+<actions>
+    <action>
+        <property name="name">
+            <cstring>categorias</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>image65020</iconset>
+        </property>
+        <property name="text">
+            <string>Categorias en Prestashop</string>
+        </property>
+        <property name="menuText">
+            <string>Categorias en Prestashop</string>
+        </property>
+        <property name="toolTip">
+            <string>Categorias (Ctrl+F)</string>
+        </property>
+        <property name="whatsThis">
+            <string>Categorias</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+F</string>
+        </property>
+    </action>    
+    <action>
+        <property name="name">
+            <cstring>fabricantes</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>image65020</iconset>
+        </property>
+        <property name="text">
+            <string>Fabricantes en Prestashop</string>
+        </property>
+        <property name="menuText">
+            <string>Fabricantes en Prestashop</string>
+        </property>
+        <property name="toolTip">
+            <string>Fabricantes (Ctrl+F)</string>
+        </property>
+        <property name="whatsThis">
+            <string>Fabricantes</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+F</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>wg_widget</cstring>
+        </property>
+        <property name="text">
+            <string>Widgets</string>
+        </property>
+        <property name="menuText">
+            <string>Widgets</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+W</string>
+        </property>
+    </action>
+</actions>
+<images>
+    <image name="image9231">
+        <data format="PNG" length="1041">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000003d849444154789c9597b16b1c5710c60783ff0095fe0f52a47277aee25421a53aa9933b095418a14a71610e158ae2ee5c04ee0a41aebbb808e746a04b48d83508ee02829583027bc60a2b71813d50b1986b7e29de7bbbf766f7e99c6d86bd9dd99bf9e6fb66de0a003934d9288e041062c47b7ec7f2e59e8bf50ffaa9f749144722796ebcf3996f8bbbc20b722fd7feeab9b87f737e599635fa396b026636ca5997b95f995028bf66a4a48cd748e8f7c52c2190a67002e9e960b9820a565599b345713f5216c9d23623909b2cc7af0eccbfbc3a804b487ac7705ec0d653e3733a800c38e9c004a2d76d881d2cb51ed7b9659068e64074b407dbdf92f4bbb0bfc970eb29ec6fc2a280e7eb64a3211470f67c13b6d7c9ae12e3b7d16aacacc699006255a6bfa4a6ba4b18ff780cfd311cee00307eb90357c09b2e5cc0d9ee3a14c0ebb689cbeb9501c24221e0eca2f27f30ff772eb226f2f67d4fe49148fc674f1e7f782fa34fef443edccae8fbefe4f1edadc4bffe20f2c748267ff5e5eb2f5a32f9edadc83f53195dff2cb22632fd7b8ab4849beb1b9eb49e70737d833c14994ea7226b22f3f9bcb20f45e277b1484b2c021f4d62dd5ed7f4e90207abb98f6de6d66ff0c61035b94c00d8dbee00d0de37f1833e706aefeb1cf0d45371208e8cfd7decf52cb1aab09744e789e79f5ea6ec6c409666ec6c40e76808c0e657c7b4f74b6ed4b9605551716001ed1743efe54c800c92737b6fd97d707456553283cee11016d0793984135369f225706e93765276082c215122309e8c21876ecf9b0344a765520248729154fec0f18b017b5bd0defd0976e1d9371d38b4c91c2e0d294b483d177cbda6d6662ad3855789947ab61371d03376d8374931322689ad9f9b900d7341744ff44e5831cb6b7e4b9c6af4d77ecddb4bcff2995f895e3ca5bfbf4beafe7a42ce405c463ab31291dc799b97eaca744f9d0df9bb073e075ce656e7350e58dbb4cfbdf8fcb3fcab0979774f052522ee7cd0bcf5ca8a349281f344697d0eb8ca3507746f9b7b5a9d13025c0822b73c07ca13cc47bf72addf555baf44b2b8d7bf8c3399842ac8945dda620d95557344231a420e105db1aec0d915faae265de1cf13cb8920177c04426a507bfcb3d550f871cd67c299cf81b272a5068794bd823dd55c72f6ff9d8a9b4f305545abd4b05036707a8ee24844f7dc058576c20a7dd710536a0a20e0d075bdd7df074a25c109e7d4b050f1ee7d0d1c2a11d07a7799a769ea21607f0fb2dac5bb38354903df059aed2e63dd531f91b01a3467b4ba9abe0b6a3a56df76baa7ab265c7a957a71a12de99fd53417422a089d0f9c1ab40af4f9822a5e748f4a15283d6b2eac44c0fad7b8a076ca7febf2bf296a2ff3930000000049454e44ae426082</data>
+    </image>
+    <image name="image65020">
+        <data format="PNG" length="2002">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000079949444154789cc5975d6c54c715c77f3373efdd4faff7c35e203698ddade5c5c281d4a14506e2a641ad6404fd505ba1d2072a552a8fadd42f1455e913bc55487d6e9348ed4b13b549e887d4d0a408d340825b21641b10ac0db2d776bcf6b2bbacf7e3de9ddb07bcdb98c4a621917aa4a3d19d7367ce7fcefce7cc19f83f8b58cf70faf4e9ef7477777f464a89d6fab1266f8e9d9999b975f2e4c9df7ed43fc67a8377eddaf5cdfefefe2300aeebb6fa955228a5fe6710b66d333131f106f0f1001886e16aad59ca2d915b5ae4bdb17f7360ff01e6b2773978f04bcccecee2ba2ef97c9e542ac5b56bd7686f6fa756ab619a264a291cc7c1300c0cc370d7f3233742afb526e0f5f0cb5ffc0ccfcc55cefef90dfef2fb97115292cd66b973e70e994c8652a9c4d9b367b97af52ad56a95b1b131a6a6a6989e9e46ca0d5d6c0cc0304cfef6e61ff9f2ee3e0eee4eb3ddc963bb265abb2493499452f4f6f6522c163971e2047d7d7d844221464646e8eeee26168bd1dfdfbf218075b7402985d763f1bb3f9de307cff423ea9aa1cf3fcd5bb3ffc034145bb66ca1542a914aa5304d13d33429140a84c3611cc72191482084a0542a6dc8990d23600bc54bdb6b74bd7b81aa29d06fbec2f35baab84262db364a29f2f93c73737364b359a6a7a7711c072925aeebe238ce2309bb6e04a494043d06d699b788351c74bd86f8d60f310d13af21995d7c1fd334a9d56a2c2c2c100a85d8ba752b972e5d6aed7b4f4f0fc56271431eb4003cfbecb383c160f03921843b353555b06ddb9252d1664a302df05a6b063a8e432e97c3e7f3914ea7b972e50af97c9e482482d7eb65656585a5a525bababa585c5cb476eedcf9fd643219725d5764b3d973636363ff82d544d4d3d3138e44227921048ee3100804387efc38c78e1dc3b2d63a6e8ad61acbb2905252ad56711c875aad86528a7abd8edfefe7fefdfb98a6c9abafbeca8b2fbec8caca0aa66952ad56a956abe14c265330002ccbfae9fdfbf7a9542a388e43b95ca6502820844008d1da9266281b8d068542818585052a950abdbdbd64b359a49424934932990ce170986ab54a3c1ea75028303e3e4e5b5b1b524abc5e2f52ca9f00cf1b007ebfff2bc3c3c3148b452a950ab95c8e68348a10a245a89b376f92c964b06d9ba1a121a2d1289148a41591cece4e2e5ebcc8eddbb74926936cdbb60d2104b55a8d6834cadebd7b0987c304834100ce9f3fffd50f0248757474e0f17828954af4f4f4100c06b16d1b2104aeebd2d5d5c5d0d010e17098c9c949eaf5fa9a2df1f97c9c397386d1d151f2f93cf57a1d2104b66d130c06191c1ca45028d0d6d6d68c40aac581a79e7acaddbe7d3ba552896ab58a6118747474f0c4134ffc97ad86c1c4c404524ad2e9348ee3ac01a094627a7a1adbb6e9ededa5d168b46cd96c965c2e87e33878bd5ebc5e2fe3e3e34c4d4d3dd8e0542ae536c36f1806a55269cd044d492412542a15e6e7e73f92989b366d22100890c9643e64534ae1f7fb715d179fcf472814e2f6eddba2790c174dd3ec6c341a4829514a71ead4298e1c39d24a24c16090ad5bb7128fc7999999616565658d03cbb2387af428972e5d627e7e9e62b1083c20ec6bafbdc60b2fbc806559b8ae8b699a0821de87d53ca0941af5783c5fd35ad36834504a914c26310ca30560727292919111a4942c2e2ed2dedebe06c0f2f2328944824824c2f8f838894402002104894402a5546b711e8f0729e585160792c9e47386619c731c07c77128140a8c8e8e120a855a47b139181e24a1668de0ba6eeb1fc3305aab6e16315a6b8ac522fbf6ed231289a094c2300c84105fbc71e3c6db122093c9fc1df85ebd5e9fabd7ebc462b137038140f32e4729851002ad355aeb1698e664cdd535ed42883576bfdf4f3c1e7fa55aad52afd70b86617cf7c68d1b6fc3072ea39b376ffebab3b3b3c3eff7b377efdebf4a295b003ea92aa5181e1e7ec3e3f1108fc7db2726265e6efa6d0188c7e3c981810133180cda870f1fd6cdaaa699011f57955298a6c9a14387c28140606ef7eedda452a9cf7e08402291d8138bc5a8d56aeffafdfecf35eff8f556f571eca669a2b51e2e97cbefb4b7b7b36ddbb6673e04a0ababeb0b4a29161616c49d3b77be6d59d69a891ed6871d3dca3e3737f78d7c3edfa9b566f3e6cd434dbfadeb38140a0d552a158ac5e2d0ce9d3bd71cc14f2aa669924ea72997cb07cae5323e9fefc0072320002291c893f97c1ead353b76ec6831ffd350a51403030368adc9e572c4e3f14d800f101250e170f8c98e8e0ee6e7e7894422adbaeed3d246a3412814221a8db2b0b040341a259d4eef07940178070707f7c76231e6e7e79152323838f8ded1a347f7ac268c350f9387e5517678f03879fdf5d7cf02237373732a180c3230303078fdfaf5770cc093cbe5365fb87001c330a8d56a33b3b3b393d16874575f5f5fab1c6a16260f4b3313aed7afb5e6d6ad5bb5bb77ef8ed76ab5cd4aa93dabef8608e01140acbbbbfb48b158fc8d6559dcbb77ef15c771ce7b3c9ef2fefdfbf769ad715d576aad15a0b4d6125080745d57ae82d380061a42082da56c08211aabfd5cbe7cf99f2b2b2b4b4aa9a7c3e1f0cf576b841f65b3d99704105c25e18f95528d5c2ef70760990727a4e9cc586dd543dfcda5bb40037056dbc643df7ab5f5c662b1afbbaeeb5b5e5efe15608bd5c9c463ea9aa83f8efe07f4bb66684d6b1ee20000000049454e44ae426082</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>categorias</sender>
+        <signal>activated()</signal>
+        <receiver>FLWidgetApplication</receiver>
+        <slot>openDefaultForm()</slot>
+    </connection>
+    <connection>
+        <sender>fabricantes</sender>
+        <signal>activated()</signal>
+        <receiver>FLWidgetApplication</receiver>
+        <slot>openDefaultForm()</slot>
+    </connection>
+    <connection>
+        <sender>wg_widget</sender>
+        <signal>activated()</signal>
+        <receiver>FLWidgetApplication</receiver>
+        <slot>execDefaultScript()</slot>
+    </connection>
+</connections>
+<slots>
+    <slot>chooseFont()</slot>
+    <slot access="protected">destroy()</slot>
+    <slot>generalExit()</slot>
+    <slot>helpAbout()</slot>
+    <slot>helpIndex()</slot>
+    <slot access="protected">init()</slot>
+    <slot>openDefaultForm()</slot>
+    <slot>toggleStatusBar(bool)</slot>
+    <slot>toggleToolBar(bool)</slot>
+    <slot>windowClose()</slot>
+    <slot>execDefaultScript()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

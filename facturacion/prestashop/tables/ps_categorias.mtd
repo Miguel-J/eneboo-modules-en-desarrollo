@@ -1,0 +1,59 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>ps_categorias</name>
+		<!-- Listado de categorias de artículos -->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Categorias")</alias>
+
+	<field>
+		<name>id</name>
+		<!-- Código de la categoria -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código Categoría")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>uint</type>
+		<length>12</length>
+
+		<relation>
+			<table>ps_articuloscategoria</table>
+			<field>idcat</field>
+			<card>1M</card>
+		</relation>
+	</field>
+
+	<field>
+		<name>id_parent</name>
+		<!-- Código de la categoria superior -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Código categoria superior")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>uint</type>
+		<length>12</length>
+	</field>
+
+	<field>
+		<name>name</name>
+		<!-- Código de la familia -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Nombre de la categoria")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>string</type>
+		<length>100</length>
+	</field>
+
+	<field>
+		<name>description</name>
+		<alias>QT_TRANSLATE_NOOP("MetaData","Descripción de la Categoría")</alias>
+		<pk>false</pk>
+		<type>string</type>
+	</field>
+
+	<field>
+		<name>active</name>
+		<!-- Código de la familia -->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Activa")</alias>
+		<null>true</null>
+		<pk>false</pk>
+		<type>bool</type>
+		<length>1</length>
+	</field>
+</TMD>

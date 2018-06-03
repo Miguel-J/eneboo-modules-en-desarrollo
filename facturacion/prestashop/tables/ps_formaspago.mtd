@@ -1,0 +1,35 @@
+<!DOCTYPE TMD>
+<TMD>
+	<name>ps_formaspago</name>
+	<!-- Listado de formas de pago por artículo y tarifa -->
+	<alias>QT_TRANSLATE_NOOP("MetaData","Formas de pago")</alias>
+
+	<field>
+		<name>name</name>
+		<!-- Identificador interno	-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Name")</alias>
+		<null>false</null>
+		<pk>true</pk>
+		<type>string</type>
+		<length>100</length>
+		<visiblegrid>false</visiblegrid>
+	</field>
+
+	<field>
+		<name>codpago</name>
+		<!-- Código de la tarifa	-->
+		<alias>QT_TRANSLATE_NOOP("MetaData","Codpago")</alias>
+		<null>false</null>
+		<pk>false</pk>
+		<ck>true</ck>
+		<type>string</type>
+		<length>10</length>
+
+		<relation>
+			<table>tarifas</table>
+			<field>codtarifa</field>
+			<card>M1</card>
+			<delC>true</delC>
+		</relation>
+	</field>
+</TMD>
